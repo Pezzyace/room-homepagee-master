@@ -1,0 +1,94 @@
+@import 'colors';
+@import 'media-quires';
+
+.slider-three{
+  width: 100%;
+  display: none;
+  grid-template-columns: 1.5fr 1fr;
+
+  @include mobile{
+    grid-template-columns: 1fr;
+  }
+
+  .slider-left{
+    background: url(/images/desktop-image-hero-3.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+    
+    @include mobile{
+      
+    }
+
+    nav{
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+
+      ul{
+        display: flex;
+        gap: 20px;
+
+        li{
+          color: $crack;
+          cursor: pointer;
+          padding-bottom: 5px;
+          transition: 0.5s;
+        }
+        li:hover{
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .slider-right{
+    padding: 120px 50px;
+    position: relative;
+
+    h2{
+      font-size: 40px;
+      line-height: 1;
+      width: 80%;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    article{
+      width: 90%;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: $DG;
+    }
+    p{
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    p:hover{
+      color: $DG;
+    }
+
+    .slider-icon{
+      display: flex;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+
+      button{
+        background-color: black;
+        border: none;
+        padding: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      button:hover{
+        background-color: $DG;
+      }
+    }
+  }
+}

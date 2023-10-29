@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'slider-one';
+@import 'slider-two';
+@import 'slider-three';
+@import 'bottom';
+@import 'media-quires';
+@import 'top';
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  width: 100vh;
+
+  @include mobile{
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+@import 'media-quires';
+
+.bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 30vh;
+
+  @include mobile{
+    grid-template-columns: 1fr;
+  }
+
+  .dark{
+    background: url(/images/image-about-dark.jpg) no-repeat;
+    background-size: 100% 100%;
+    
+    @include mobile{
+      height: 270px;
+      width: 375px;
+    }
+  }
+  .about{
+    padding: 30px 20px 10px 20px;
+
+    h2{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    p{
+      color: $DG;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+  }
+  .light{
+    background: url(/images/image-about-light.jpg) no-repeat;
+    background-size: 100% 100%;
+
+    @include mobile{
+      height: 270px;
+      width: 375px;
+    }
+  }
+}
